@@ -6,8 +6,8 @@ body {
     margin: 0;
     height: 100vh;
     background: #050505;
-    color: white;
-    font-family: monospace;
+    color: black;
+    font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,22 +15,42 @@ body {
 
 .box {
     text-align: center;
-    width: 90%;
-    max-width: 600px;g
+    max-width: 500px;
+    padding: 50px 35px;
+    background: #ffffff;
+    border: 2px solid #f1d9df;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(120, 70, 80, 0.08);
+    transition: 1s;
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: normal;
-    margin-bottom: 35px;
+    margin-bottom: 0 0 30px;
 }
 
 button {
-    background: none;
-    border: 1px solid #555;
-    color: white;
-    padding: 10px 25px;
+    background: #ffe1e8;
+    color: #3d3034;
+    border: 2px solid #f3c8d2;
+    border-radius: 999px;
+    padding: 11px 28px;
     margin: 5px;
     cursor: pointer;
     font-family: monospace;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #f7c5d1;
+    transform: translateY(-2px);
+}
+
+#answer {
+    margin-top: 30px;
+    color: #9b737d;
+    line-height: 1.7;
 }
