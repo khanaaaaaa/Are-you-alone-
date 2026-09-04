@@ -7,15 +7,31 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="box">
-            <h1 id="question">Are you alone right now?</h1>
-
-            <div class="buttons">
-                <button onclick="answer('yes')">YES</button>
-                <button onclick="answer('no')">NO</button>
-            </div>
-
-            <p id="answer"></p>
+        <div class="box" id="start">
+            <h1>hi! ♡</h1>
+            <p>I just have a few questions for you.</p>
+            <a href="#alone">okay!</a>
+        </div>
+        <div class="box" id="alone">
+            <h1>Are you alone right now?</h1>
+            <a href="#yes">yes</a>
+            <a href="#no">no</a>
+        </div>
+        <div class="box" id="yes">
+            <h1>That's good! ♡</h1>
+            <p>Because nobody else should be able to see this.</p>
+            <a href="#bedroom">okay...</a>
+        </div>
+        <div class="box" id="no">
+            <h1>Oh...</h1>
+            <p>Someone's with you?</p>
+            <a href="#bedroom">yes</a>
+            <a href="#bedroom">no</a>
+        </div>
+        <div class="box" id="bedroom">
+            <h1>Are you in your bedroom?</h1>
+            <a href="#door">yes</a>
+            <a href="#not-bedroom">no</a>
         </div>
         <script src="script.js"></script>
     </body>
