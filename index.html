@@ -7,8 +7,6 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <img id="glitch-gif" src="glitch.gif" alt="">
-        <div class="box" id="start"></div>
         <div class="box" id="start">
             <h1>hi! ♡</h1>
             <p>I just have a few questions for you.</p>
@@ -62,11 +60,15 @@
             <p><strong>Knock.</strong></p>
             <a href="#glitch">don't open it.</a>
         </div>
-        <div class="box glitch-box" id="glitch">
-            <p>Something went wrong.</p>
-            <p>Don't worry.</p>
-            <p>You're still safe.</p>
-            <a href="#window">continue</a>
+        <div id="glitch">
+            <img src="glitch.gif" alt="">
+
+            <div class="glitch-message">
+                <p>Something went wrong.</p>
+                <p>Don't worry.</p>
+                <p>You're still safe.</p>
+                <a href="#window">continue</a>
+            </div>
         </div>
         <div class="box" id="window">
             <h1>Now look at your window.</h1>
@@ -74,6 +76,27 @@
             <a href="#reflection">yes</a>
             <a href="#reflection">no</a>
         </div>
-        <script src="script.js"></script>
+        <div class="box" id="reflection">
+            <h1>Good.</h1>
+            <p>Keep looking at the window.</p>
+            <p>Don't look anywhere else.</p>
+            <a href="#outside">okay..</a>
+        </div>
+        <div class="box" id="outside">
+            <h1>Do you see anything?</h1>
+            <a href="#nothing">no</a>
+        </div>
+        <div class="box" id="nothing">
+            <p>That's strange.</p>
+            <p>There should be someone there</p>
+            <a href="#closer">who?</a>
+        </div>
+        <div class="box" id="closer">
+            <h1>Don't worry about it.</h1>
+            <p>Just stay where you are.</p>
+            <p>Don't move.</p>
+            <p>Don't turn around.</p>
+            <a href="#behind">...</a>
+        </div>
     </body>
 </html>

@@ -75,40 +75,77 @@ a:hover {
     transform: translateY(-2px);
 }
 
-.glitch-box {
-    background: #080808;
-    color: #ff003c;
-    border: 1px solid #ff003c;
-    box-shadow:
-        0 0 10px #ff003c,
-        0 0 30px rgba(255, 0, 60, 0.4);
-    font-family: monospace;
+@keyframes glitchDisappear {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
-.glitch-box h1 {
-    color: #ff003c;
-}
-
-.glitch-box p {
-    color: #d6d6d6;
-}
-
-.glitch-box a {
-    background: #111;
-    color: #ff003c;
-    border-color: #ff003c;
-}
-
-#glitch-gif {
+#glitch {
     display: none;
     position: fixed;
     inset: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    background: black;
     z-index: 99999;
 }
 
-body:has(#glitch:target) #glitch-video {
+#glitch:target {
     display: block;
 }
+
+#glitch > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    animation: glitchDisappear 3.5s forwards;
+}
+
+.glitch-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    padding: 25px;
+    background: #080808;
+    color: #ff003c;
+    border: 1px solid #ff003c;
+    border-radius: 16px;
+    box-shadow:
+        0 0 10px #ff003c,
+        0 0 30px rgba(255, 0, 60, 0.4);
+    text-align: center;
+    font-family: monospace;
+    z-index: 1;
+}
+
+.glitch-message p {
+    color: #d6d6d6;
+    line-height: 1.7;
+}
+
+.glitch-message a {
+    display: inline-block;
+    background: #111;
+    color: #ff003c;
+    border: 2px solid #ff003c;
+    border-radius: 999px;
+    padding: 11px 28px;
+    margin: 5px;
+    text-decoration: none;
+}
+
