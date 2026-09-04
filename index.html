@@ -30,8 +30,41 @@
         </div>
         <div class="box" id="bedroom">
             <h1>Are you in your bedroom?</h1>
-            <a href="#door">yes</a>
-            <a href="#not-bedroom">no</a>
+            <a href="#noise">yes</a>
+            <a href="#noise">no</a>
+        </div>
+        <div class="box" id="noise">
+            <h1>Did you hear that?</h1>
+            <p>It's okay.</p>
+            <p>Probably just the house settling.</p>
+            <p>...</p>
+            <p>Actually, houses don't make that sound.</p>
+            <a href="#door">what sound?</a>
+        </div>
+        <div class="box" id="door">
+            <h1>Look at your door.</h1>
+            <p>Don't open it.</p>
+            <p>Don't even get close to it.</p>
+            <p><strong>Is your door locked?</strong></p>
+            <a href="knocking">yes</a>
+            <a href="knocking">no</a>
+        </div>
+        <div class="box" id="knocking">
+            <h1>Look at your door.</h1>
+            <p>Don't answer it.</p>
+            <p>They're going to knock again.</p>
+            <p>...</p>
+            <p>See?</p>
+            <p><strong>Knock.</strong></p>
+            <p><strong>Knock.</strong></p>
+            <p><strong>Knock.</strong></p>
+            <a href="#window">don't open it.</a>
+        </div>
+        <div class="box" id="window">
+            <h1>Now look at your window.</h1>
+            <p>Is it open?</p>
+            <a href="#reflection">yes</a>
+            <a href="#reflection">no</a>
         </div>
         <script src="script.js"></script>
     </body>
