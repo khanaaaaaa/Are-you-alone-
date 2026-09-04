@@ -56,10 +56,6 @@ p {
     line-height: 1.7;
 }
 
-body:has(.screen:target) #start {
-    display: none;
-}
-
 a {
     display: inline-block;
     background: #ffe1e8;
@@ -77,4 +73,42 @@ a {
 a:hover {
     background: #f7c5d1;
     transform: translateY(-2px);
+}
+
+.glitch-box {
+    background: #080808;
+    color: #ff003c;
+    border: 1px solid #ff003c;
+    box-shadow:
+        0 0 10px #ff003c,
+        0 0 30px rgba(255, 0, 60, 0.4);
+    font-family: monospace;
+}
+
+.glitch-box h1 {
+    color: #ff003c;
+}
+
+.glitch-box p {
+    color: #d6d6d6;
+}
+
+.glitch-box a {
+    background: #111;
+    color: #ff003c;
+    border-color: #ff003c;
+}
+
+#glitch-gif {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 99999;
+}
+
+body:has(#glitch:target) #glitch-video {
+    display: block;
 }
