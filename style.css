@@ -119,34 +119,29 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 320px;
-    padding: 25px;
-    background: #080808;
-    color: #ff003c;
-    border: 1px solid #ff003c;
-    border-radius: 16px;
-    box-shadow:
-        0 0 10px #ff003c,
-        0 0 30px rgba(255, 0, 60, 0.4);
-    text-align: center;
-    font-family: monospace;
+    width: 400px;
+    height: 250px;
+    background: url("notification.jpg") center / contain no-repeat;
     z-index: 1;
+    text-align: center;
+    padding: 60px 45px 30px;
+    font-family: monospace;
 }
 
 .glitch-message p {
-    color: #d6d6d6;
-    line-height: 1.7;
+    color: #333;
+    margin: 8px 0;
 }
 
 .glitch-message a {
-    display: inline-block;
-    background: #111;
-    color: #ff003c;
-    border: 2px solid #ff003c;
-    border-radius: 999px;
-    padding: 11px 28px;
-    margin: 5px;
-    text-decoration: none;
+    position: absolute;
+    color: #333;
+    background: transparent;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 15px;
+    font-family: monospace;
+    text-decoration: underline;
 }
 
 #glitch2,
