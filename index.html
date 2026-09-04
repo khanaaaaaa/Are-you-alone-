@@ -25,6 +25,7 @@
         <div class="box" id="no">
             <h1>Oh...</h1>
             <p>Someone's with you?</p>
+            <p>Doesn't matter, you'll answer the same eiter way.</p>
             <a href="#bedroom">yes</a>
             <a href="#bedroom">no</a>
         </div>
@@ -35,9 +36,7 @@
         </div>
         <div class="box" id="noise">
             <h1>Did you hear that?</h1>
-            <p>It's okay.</p>
             <p>Probably just the house settling.</p>
-            <p>...</p>
             <p>Actually, houses don't make that sound.</p>
             <a href="#door">what sound?</a>
         </div>
@@ -72,13 +71,7 @@
         </div>
         <div class="box" id="window">
             <h1>Now look at your window.</h1>
-            <p>Is it open?</p>
-            <a href="#reflection">yes</a>
-            <a href="#reflection">no</a>
-        </div>
-        <div class="box" id="reflection">
-            <h1>Good.</h1>
-            <p>Keep looking at the window.</p>
+            <p>Keep looking at it.</p>
             <p>Don't look anywhere else.</p>
             <a href="#outside">okay..</a>
         </div>
@@ -132,13 +125,6 @@
             <a href="#inside">then where?</a>
         </div>
         <div class="box" id="inside">
-            <p>Closer.</p>
-            <p>Much closer.</p>
-            <p>You've been sitting there this entire time.</p>
-            <p>Haven't you?</p>
-            <a href="#typing">...</a>
-        </div>
-        <div class="box" id="typing">
             <h1>Wait</h1>
             <p>Did you hear that?</p>
             <p>That little sound?</p>
@@ -158,13 +144,14 @@
             <div class="glitch-message">
                 <p>ACCESSING LOCAL DATA...</p>
                 <p>PLEASE WAIT.</p>
+                <a href="#data">?</a>
             </div>
         </div>
         <div class="box" id="data">
             <h1>There you are.</h1>
             <p>I can see you now.</p>
-            <p>Just your screen.</p>
-            <p>That's enough.</p>
+            <p>Don't worry, it's just your screen.</p>
+            <p>But that's enough :)</p>
             <a href="#safe">am I safe?</a>
         </div>
         <div class="box" id="safe">
@@ -204,8 +191,7 @@
         </div>
         <div class="box" id="reflection2">
             <h1>Look at your reflection.</h1>
-            <p>Not the window.</p>
-            <p>Your screen.</p>
+            <p>Your screen...</p>
             <p>You should be able to see yourself in it.</p>
             <p>...</p>
             <a href="#wrongreflection">do you?</a>
@@ -248,6 +234,34 @@
             <h1>Are you human?</h1>
             <a href="#yeshuman">yes</a>
             <a href="#nohuman">no</a>
+        </div>
+        <div class="box" id="yeshuman">
+            <p>That's what you said before.</p>
+            <p>But I checked.</p>
+            <p>...</p>
+            <p>You're not.</p>
+            <a href="#ending">what?</a>
+        </div>
+        <div class="box" id="nohuman">
+            <h1>Good.</h1>
+            <p>You finally remember</p>
+            <a href="#ending">remembered what?</a>
+        </div>
+        <div class="box" id="ending">
+            <h1>You.</h1>
+            <p>The knocking.</p>
+            <p>The reflection that moved when you didn't.</p>
+            <p>All of it was you.</p>
+            <p>It never needed to get in.</p>
+            <p>It already had.</p>
+            <a href="#final">...</a>
+        </div>
+        <div id="final">
+            <img src="glitch.gif" alt="">
+            <div class="glitch-message">
+                <p>CONNECTION LOST</p>
+                <p>GOODBYE.</p>
+            </div>
         </div>
     </body>
 </html>
