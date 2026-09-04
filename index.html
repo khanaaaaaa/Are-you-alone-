@@ -144,7 +144,7 @@
             <div class="glitch-message">
                 <p>ACCESSING LOCAL DATA...</p>
                 <p>PLEASE WAIT.</p>
-                <a href="#data">?</a>
+                <a href="#data">????</a>
             </div>
         </div>
         <div class="box" id="data">
@@ -263,5 +263,64 @@
                 <p>GOODBYE.</p>
             </div>
         </div>
+        <audio id="cuteMusic" loop>
+            <source src="cute.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="creepyMusic" loop>
+            <source src="creepy.mp3" type="audio/mpeg">
+        </audio>
+
+        <script>
+            const cuteMusic = document.getElementById("cuteMusic");
+            const creepyMusic = document.getElementById("creepyMusic");
+
+            cuteMusic.volume = 0.35;
+            creepyMusic.volume = 0.4;
+
+            let musicStarted = false;
+            let glitchNumber = 0;
+
+            function startCuteMusic () {
+                creepyMusic.pause();
+                cuteMusic.play().catch(error => {
+                    console.log("Cute music error:", error);
+                });
+            }
+
+            function startCreepyMusic() {
+                cuteMusic.pause();
+                creepyMusic.play().catch(error => {
+                    console.log("Creepy music error:", error);
+                });
+            }
+
+            document.addEventListener("click", () => {
+                const hash = window.location.hash;
+
+                if (!musicStarted) {
+                    startCuteMusic();
+                    musicStarted = true;
+                    return;
+                }
+
+                if (
+                    hash === "#glitch" ||
+                    hash === "#glitch2" ||
+                    hash === "#glitch3" ||
+                    hash === "#glitch4" ||
+                    hash == "#glitch5"
+                ) {
+                    glitchNumber++;
+
+                    if(glitchNumber % 2 === 1) {
+                        startCreepyMusic();
+                    }
+
+                    else {
+                        startCuteMusic();
+                    }
+                }
+            });
+        </script>
     </body>
 </html>

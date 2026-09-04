@@ -129,13 +129,13 @@ a:hover {
 }
 
 .glitch-message p {
-    color: #333;
+    color: #bfbebe;
     margin: 8px 0;
 }
 
 .glitch-message a {
     position: absolute;
-    color: #333;
+    color: #bfbebe;
     background: transparent;
     border: none;
     padding: 8px 15px;
