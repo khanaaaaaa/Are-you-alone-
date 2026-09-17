@@ -2,7 +2,7 @@
 
 ## What It Is
 
-An interactive horror website disguissed as a cute little questionnaire. It starts off with simple questions and then a final queestion: **Are you human?**
+An interactive horror website disguised as a cute little questionnaire. It starts off with simple questions and then a final question: **Are you human?**
 
 ## Why I Made It
 
